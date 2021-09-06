@@ -1,3 +1,3 @@
 # Exam
 
-Project intended to build a
+Project intended to build a Exam application
