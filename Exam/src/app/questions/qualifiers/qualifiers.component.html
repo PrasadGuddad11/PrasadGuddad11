@@ -48,54 +48,37 @@
     </div>
     <div class="collapsible-body">
         <ul class="collapsible popout">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <li *ngFor="val of Qvals; let i=index">
+              <div class="collapsible-header">{{i+1}}] {{Qvals[i].name}}</div>
+              <div class="collapsible-body">
+                <div class="row">
+                  <div class="col s12" *ngFor="valj of Qvals[i].desc; let j=index" >
+                    <div class="input-field">
+                      <input id="email_inline" type="text" class="validate" value="Input Type : {{ Qvals[i].desc[j]}}" readonly autofocus>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="col s12">
+                    <div class="input-field">
+                      <input id="email_inline" type="text" class="validate" value="Qualifier Type : {{ Qvals[i].type}}" readonly autofocus>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="col s12" *ngFor="valk of Qvals[i].options; let k=index" >
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" disabled="disabled" />
+                        <span>Option : {{ Qvals[i].options[k]}}</span>
+                      </label>
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
             </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
+            
             
         </ul>
     </div>
