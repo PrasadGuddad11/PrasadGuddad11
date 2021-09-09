@@ -1,1 +1,102 @@
-<p>addoredit works!</p>
+<ul class="collapsible z-depth-1">
+    <li>
+    <div class="collapsible-header z-depth-1 waves-effect" style="background-color: #f5f5f5;">
+        <i class="material-icons">library_add</i>
+       Add new Questions
+    </div>
+    <div class="collapsible-body">
+      <form class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">add_circle</i>
+          <input id="Qname" type="text" class="validate">
+          <label for="Qname">Enter Qualifier Name </label>
+        </div>
+        <p class="col s6">
+          <label>
+            <input class="with-gap" name="group3" type="radio" checked />
+            <span>descriptive type </span>
+          </label>
+        </p>
+        <p  class="col s6">
+          <label>
+            <input class="with-gap" name="group3" type="radio" checked />
+            <span>multiple choice type</span>
+          </label>
+        </p>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">fact_check</i>
+          <textarea id="objs" class="materialize-textarea"></textarea>
+          <label for="objs">Enter Options </label>
+          <span class="helper-text" data-error="wrong" data-success="right">
+            <b>
+              Format : option1&&option2&&option3...
+            </b>
+          </span>
+        </div>
+        <button class="btn waves-effect waves-light" type="button" name="action">Create Qualifier
+          <b><i class="material-icons right">send</i></b>
+        </button>
+      </form>
+    </div>
+    </li>
+    </ul>
+    <ul class="collapsible z-depth-1">
+        <li class="active">
+        <div class="collapsible-header z-depth-1 waves-effect avoid-clicks" style="background-color: #f5f5f5;">
+            <i class="material-icons">edit_note</i>
+           Edit or View All Questions
+        </div>
+        <div class="collapsible-body">
+            <ul class="collapsible popout">
+                <li  *ngFor="val of Qvals; let i=index">
+                  <div class="collapsible-header" style="font-weight: bold;background-color: #f5f5f5;color: gray;">Q No:{{i+1}} ] {{Qvals[i].body}}</div>
+                  <div class="collapsible-body">
+                    <div class="row">
+                      <div class="col s12">
+                        <div class="input-field">
+                          <input id="email_inline" type="text" class="validate" value="Question id : {{ Qvals[i].id}}" readonly autofocus>
+                        </div>
+                      </div>
+                      <div class="col s12">
+                        <div class="input-field">
+                          <input id="email_inline" type="text" class="validate" value="Chapter Number : {{ Qvals[i].ChapterNumber}}" readonly autofocus>
+                        </div>
+                      </div>
+                      <div class="col s12">
+                        <div class="input-field">
+                          <input id="email_inline" type="text" class="validate" value="Subject Name : {{ Qvals[i].SubjectName}}" readonly autofocus>
+                        </div>
+                      </div>
+                      <div class="col s12">
+                        <div class="input-field">
+                          <input id="email_inline" type="text" class="validate" value="Class Name : {{ Qvals[i].ClassName}}" readonly autofocus>
+                        </div>
+                      </div>
+                      <div class="col s12">
+                        <div class="input-field">
+                          <input id="email_inline" type="text" class="validate" value="Defficulty Level : {{ Qvals[i].DefficultyLevel}}" readonly autofocus>
+                        </div>
+                      </div>
+                      <div class="col s12">
+                        <div class="input-field">
+                          <input id="email_inline" type="text" class="validate" value="Marks : {{ Qvals[i].Marks}}" readonly autofocus>
+                        </div>
+                      </div>
+                      <div class="col s12">
+                        <div class="input-field">
+                          <input id="email_inline" type="text" class="validate" value="Answer Type : {{ Qvals[i].desc}}" readonly autofocus>
+                        </div>
+                      </div>
+                      <div class="col s12">
+                        <div class="input-field">
+                          <input id="email_inline" type="text" class="validate" value="Options : {{ Qvals[i].options}}" readonly autofocus>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </li>
+            </ul>
+        </div>
+        </li>
+    </ul>    

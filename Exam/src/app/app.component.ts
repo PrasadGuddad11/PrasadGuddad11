@@ -21,7 +21,7 @@ export class AppComponent implements OnInit  {
       measurementId: "G-KJJ0R5XVD6"
     }
     const app:any=firebase.initializeApp(config);
-    
+   
   }
   ngAfterViewChecked(){
     M.AutoInit();
@@ -29,5 +29,21 @@ export class AppComponent implements OnInit  {
   }
   moveTo(route:string){
     this.router.navigate([route])
+  }
+  writeQualifiers(){
+    var qualfr={
+      'id':new Date().valueOf(),
+      'body':btoa((new Date().valueOf()).toString())+ "?",
+      'desc':'Na',
+      'options':'Na',
+      'Marks':'-',
+      'DifficultyLevel':'-',
+      'QuestionType':'-',
+      'ChapterNumber':'-',
+      'ClassName':'-',
+      'SubjectName':'-'
+    }
+    var database = firebase.database();
+    database.ref('Questions/' + qualfr.id).set(qualfr);
   }
 }

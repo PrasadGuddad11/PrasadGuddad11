@@ -1,1 +1,86 @@
-<p>qualifiers works!</p>
+<ul class="collapsible z-depth-1">
+<li>
+<div class="collapsible-header z-depth-0 waves-effect" style="background-color: #f5f5f5;">
+    <i class="material-icons">add_moderator</i>
+   Add new Qualifiers
+</div>
+<div class="collapsible-body">
+  <form class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">add_circle</i>
+      <input id="Qname" type="text" class="validate">
+      <label for="Qname">Enter Qualifier Name </label>
+    </div>
+    <p class="col s6">
+      <label>
+        <input class="with-gap" name="group3" type="radio" checked />
+        <span>descriptive type </span>
+      </label>
+    </p>
+    <p  class="col s6">
+      <label>
+        <input class="with-gap" name="group3" type="radio" checked />
+        <span>multiple choice type</span>
+      </label>
+    </p>
+    <div class="input-field col s12">
+      <i class="material-icons prefix">fact_check</i>
+      <textarea id="objs" class="materialize-textarea"></textarea>
+      <label for="objs">Enter Options </label>
+      <span class="helper-text" data-error="wrong" data-success="right">
+        <b>
+          Format : option1&&option2&&option3...
+        </b>
+      </span>
+    </div>
+    <button class="btn waves-effect waves-light" type="button" name="action">Create Qualifier
+      <b><i class="material-icons right">send</i></b>
+    </button>
+  </form>
+</div>
+</li>
+</ul>
+<ul class="collapsible z-depth-1">
+    <li class="active">
+    <div class="collapsible-header z-depth-1 waves-effect avoid-clicks" style="background-color: #f5f5f5;">
+        <i class="material-icons">edit_note</i>
+        Edit or View All Qualifiers
+    </div>
+    <div class="collapsible-body">
+        <ul class="collapsible popout">
+            <li *ngFor="val of Qvals; let i=index">
+              <div class="collapsible-header">{{i+1}}] {{Qvals[i].name}}</div>
+              <div class="collapsible-body">
+                <div class="row">
+                  <div class="col s12" *ngFor="valj of Qvals[i].desc; let j=index" >
+                    <div class="input-field">
+                      <input id="email_inline" type="text" class="validate" value="Input Type : {{ Qvals[i].desc[j]}}" readonly autofocus>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="col s12">
+                    <div class="input-field">
+                      <input id="email_inline" type="text" class="validate" value="Qualifier Type : {{ Qvals[i].type}}" readonly autofocus>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="col s12" *ngFor="valk of Qvals[i].options; let k=index" >
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" disabled="disabled" />
+                        <span>Option : {{ Qvals[i].options[k]}}</span>
+                      </label>
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            
+        </ul>
+    </div>
+    </li>
+</ul>
