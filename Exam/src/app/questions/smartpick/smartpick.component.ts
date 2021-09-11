@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class SmartpickComponent implements OnInit {
 
   constructor() { }
-
+ tab:number=1;
   ngOnInit(): void {
+  }
+  move(i:number){
+    this.tab=i;
   }
 
 }

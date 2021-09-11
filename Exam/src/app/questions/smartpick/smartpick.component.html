@@ -1,1 +1,400 @@
-<p>smartpick works!</p>
+<div class="card">
+    <div class="card-content">
+      <p>Provide basic details of Question paper</p>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li  (click)="move(1)"  class="tab"><a [ngClass]="{'active' : tab==1}" href="#test4">
+            Grouping
+        </a>
+        </li>
+        <li (click)="move(2)" class="tab"><a [ngClass]="{'active' : tab==2}"  href="#test5">Weightage </a></li>
+        
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="test4">
+        <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">groups</i>Select Class</div>
+              <div class="collapsible-body row">
+                <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class1</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class2</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class3</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class4</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class5</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class6</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class7</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class8</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class9</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>class10</span>
+                    </label>
+                  </p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">speaker_group</i>Select Subject</div>
+              <div class="collapsible-body row">
+                <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject1</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject2</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject3</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject4</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject5</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject6</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject7</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject8</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject9</span>
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="radio" checked />
+                      <span>Subject10</span>
+                    </label>
+                  </p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">tag</i>Max marks</div>
+              <div class="collapsible-body"><span class="row">
+                <div class="input-field col s12">
+                    <input placeholder="" id="first_name" type="number" class="validate">
+                    <label for="first_name">Enter Max Marks </label>
+                  </div>
+              </span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">hourglass_top</i>Max Duration</div>
+                <div class="collapsible-body"><span class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="" id="first_name" type="number" class="validate">
+                        <label for="first_name">Enter Max Duration in mins </label>
+                      </div>
+                  </span></div>
+              </li>
+          </ul>
+      </div>
+      <div id="test5">
+        <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">star_half</i>Assign Chapterwise Weightage</div>
+              <div class="collapsible-body row">
+                <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter1 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter2 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter3 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter4 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter5 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter6 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter7 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter8 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter9 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                  <p class="col s12">
+                    <label>
+                      <input class="with-gap" name="group3" type="checkbox"  />
+                      <span>Chapter10 </span>
+                      <input type="range" min="0" max="100" />
+                    </label>
+                  </p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">star_half</i>Assign Markswise Weightage</div>
+                <div class="collapsible-body row">
+                  <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>1 Mark Question</span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>2 Mark Question  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>3 Mark  Question </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>4 Mark Question  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>5 Mark Question  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>6 Mark Question  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>7 Mark  Question </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>8 Mark Question  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>9 Mark Question  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>10 Mark Question  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                  </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">star_half</i>Assign Question Typewise Weightage</div>
+                <div class="collapsible-body row">
+                  <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Multiple Choice</span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Short Answer  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Moderate Length Answer </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Long answer </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Fill In the Blanks </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Match the Following   </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Map and Location </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Diagrams  </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    <p class="col s12">
+                      <label>
+                        <input class="with-gap" name="group3" type="checkbox"  />
+                        <span>Grammer </span>
+                        <input type="range" min="0" max="100" />
+                      </label>
+                    </p>
+                    
+                  </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                    <button class="btn waves-effect waves-light" type="button" name="action">Generate question Paper
+                        <i class="material-icons right">send</i>
+                      </button>
+                </div>
+            </li>
+              
+        </ul>
+      </div>
+    </div>
+  </div>

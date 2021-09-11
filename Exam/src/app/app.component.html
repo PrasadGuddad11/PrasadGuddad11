@@ -13,7 +13,7 @@
         <i class="material-icons">security</i>
        Qualifiers
     </div>
-    <div class="collapsible-header z-depth-1 waves-effect">
+    <div class="collapsible-header z-depth-1 waves-effect"  (click)="moveTo('smartpick')">
         <i class="material-icons">history_edu</i>
       Compose
     </div>
@@ -37,6 +37,6 @@
 <div class="collapsible-header z-depth-2 foot">
     <i class="material-icons ico" (click)="moveTo('addoredit')">quiz</i>
     <i class="material-icons ico" (click)="moveTo('qualifiers')">security</i>
-    <i class="material-icons ico">history_edu</i>
+    <i class="material-icons ico"  (click)="moveTo('smartpick')">history_edu</i>
     <i class="material-icons ico">notifications</i>
 </div>
